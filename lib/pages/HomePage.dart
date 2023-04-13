@@ -38,6 +38,19 @@ class HomePage extends StatelessWidget {
                     ],
                   ),
                 ),
+                SizedBox(height: 30),
+                Padding(
+                  padding: EdgeInsets.only(bottom: 5),
+                  child: Text(
+                    "Hello Sir",
+                    style: TextStyle(
+                      color: Colors.white.withOpacity(0.9),
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1,
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
