@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets/MusicList.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    var musicList = MusicList;
     return DefaultTabController(
       length: 6,
       child: Scaffold(
@@ -57,7 +55,7 @@ class HomePage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(bottom: 5),
                   child: Text(
-                    "What ypu want to hear sir?",
+                    "What you want to hear sir?",
                     style: TextStyle(
                       color: Colors.white.withOpacity(0.5),
                       fontSize: 16,
@@ -65,7 +63,8 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 15, right: 20, bottom: 20),
+                  padding:
+                      const EdgeInsets.only(top: 15, right: 20, bottom: 20),
                   child: Container(
                     height: 50,
                     width: 380,
@@ -77,7 +76,7 @@ class HomePage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
-                            margin: EdgeInsets.symmetric(horizontal: 15),
+                            margin: const EdgeInsets.symmetric(horizontal: 15),
                             height: 50,
                             width: 200,
                             child: TextFormField(
@@ -91,7 +90,8 @@ class HomePage extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 10),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 10),
                               child: Icon(
                                 Icons.search,
                                 size: 30,
@@ -100,7 +100,7 @@ class HomePage extends StatelessWidget {
                         ]),
                   ),
                 ),
-                TabBar(
+                const TabBar(
                   isScrollable: true,
                   labelStyle: TextStyle(fontSize: 18),
                   indicator: BoxDecoration(
@@ -135,24 +135,12 @@ class HomePage extends StatelessWidget {
                     child: TabBarView(
                       children: [
                         MusicList(),
-                        Container(
-                          color: Colors.red,
-                        ),
-                        Container(
-                          color: Colors.red,
-                        ),
-                        Container(
-                          color: Colors.red,
-                        ),
-                        Container(
-                          color: Colors.red,
-                        ),
-                        Container(
-                          color: Colors.red,
-                        ),
-                        Container(
-                          color: Colors.red,
-                        ),
+                        Container(color: Colors.red),
+                        Container(color: Colors.red),
+                        Container(color: Colors.red),
+                        Container(color: Colors.red),
+                        Container(color: Colors.red),
+                        Container(color: Colors.red),
                       ],
                     ))
               ],
