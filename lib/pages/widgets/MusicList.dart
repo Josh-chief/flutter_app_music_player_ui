@@ -6,16 +6,16 @@ class MusicList extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          const SizedBox(height: 15),
+          SizedBox(height: 15),
           Container(
-            margin: const EdgeInsets.only(top: 15, right: 12, left: 5),
-            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+            margin: EdgeInsets.only(top: 15, right: 12, left: 5),
+            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
             decoration: BoxDecoration(
-              color: const Color(0xFF30314D),
+              color: Color(0xFF30314D),
               borderRadius: BorderRadius.circular(10),
             ),
             child: Row(
-              children: const [
+              children: [
                 Text(
                   "1",
                   style: TextStyle(
@@ -24,13 +24,10 @@ class MusicList extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                   ),
                 ),
-                SizedBox(width: 25),
-                InkWell(
-                    // onTap: () {
-                    //   Navigator.pushNamed(context, "musicPage");
-                    // },
-
-                    ),
+                SizedBox(
+                  width: 25,
+                ),
+                InkWell(),
               ],
             ),
           ),
