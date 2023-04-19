@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_music_player/pages/widgets/MusicList.dart';
 
+import 'widgets/PlayList.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -136,12 +138,10 @@ class HomePage extends StatelessWidget {
                     child: TabBarView(
                       children: [
                         MusicList(),
-                        Container(color: Colors.red),
-                        Container(color: Colors.red),
-                        Container(color: Colors.red),
-                        Container(color: Colors.red),
-                        Container(color: Colors.red),
-                        Container(color: Colors.red),
+                        PlayList(),
+                        MusicList(),
+                        MusicList(),
+                        MusicList(),
                       ],
                     ))
               ],
