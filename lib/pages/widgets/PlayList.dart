@@ -8,17 +8,17 @@ class PlayList extends StatelessWidget {
         children: [
           for (int i = 1; i < 20; i++)
             Container(
-              margin: EdgeInsets.only(top: 20, right: 20, left: 5),
-              padding: EdgeInsets.all(15),
+              margin: const EdgeInsets.only(top: 20, right: 20, left: 5),
+              padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
-                color: Color(0xFF30314D),
+                color: const Color(0xFF30314D),
                 borderRadius: BorderRadius.circular(15),
               ),
               child: Row(
                 children: [
                   InkWell(
                     onTap: () {
-                      //NavigationBar.pushNamed(context,"playlistPage")
+                      Navigator.pushNamed(context, "playlistPage");
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10),
@@ -30,11 +30,11 @@ class PlayList extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(width: 25),
+                  const SizedBox(width: 25),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         "Imagine Dragons",
                         style: TextStyle(
                           color: Colors.white,
@@ -42,7 +42,7 @@ class PlayList extends StatelessWidget {
                           fontWeight: FontWeight.w400,
                         ),
                       ),
-                      SizedBox(height: 5),
+                      const SizedBox(height: 5),
                       Text(
                         "30 songs "
                         "Imagine Dragons",
@@ -53,7 +53,7 @@ class PlayList extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Icon(
                     Icons.more_vert,
                     color: Colors.white.withOpacity(0.6),
