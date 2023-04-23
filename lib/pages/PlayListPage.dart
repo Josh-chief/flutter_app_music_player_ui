@@ -124,7 +124,7 @@ class PlayListPage extends StatelessWidget {
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
+                          children: const [
                             Text(
                               "Shuffle",
                               style: TextStyle(
