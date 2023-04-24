@@ -6,33 +6,36 @@ class MusicList extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          SizedBox(height: 15),
+          const SizedBox(height: 15),
           for (int i = 1; i < 20; i++)
             Container(
-              margin: EdgeInsets.only(top: 15, right: 12, left: 5),
-              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+              margin: const EdgeInsets.only(top: 15, right: 12, left: 5),
+              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
               decoration: BoxDecoration(
-                color: Color(0xFF30314D),
+                color: const Color(0xFF30314D),
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Row(
                 children: [
                   Text(
                     i.toString(),
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.white,
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 25,
                   ),
                   InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, "musicPage");
+                    },
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           "Imagine Dragrons -Believer",
                           style: TextStyle(
                             color: Colors.white,
@@ -49,7 +52,7 @@ class MusicList extends StatelessWidget {
                                 fontSize: 16,
                               ),
                             ),
-                            SizedBox(width: 5),
+                            const SizedBox(width: 5),
                             Text(
                               "-",
                               style: TextStyle(
@@ -57,7 +60,7 @@ class MusicList extends StatelessWidget {
                                 fontSize: 25,
                               ),
                             ),
-                            SizedBox(width: 5),
+                            const SizedBox(width: 5),
                             Text(
                               "04:30",
                               style: TextStyle(
@@ -70,7 +73,7 @@ class MusicList extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Container(
                     height: 35,
                     width: 35,
@@ -78,7 +81,7 @@ class MusicList extends StatelessWidget {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.play_arrow,
                       color: Color(0xFF31314F),
                       size: 25,
