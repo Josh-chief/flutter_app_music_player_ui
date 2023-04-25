@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class MusicPage extends StatelessWidget {
   @override
@@ -10,7 +8,7 @@ class MusicPage extends StatelessWidget {
       decoration: const BoxDecoration(
         image: DecorationImage(
             image: AssetImage(
-              "image/background.jpg",
+              "images/background.jpg",
             ),
             fit: BoxFit.cover),
       ),
@@ -63,6 +61,124 @@ class MusicPage extends StatelessWidget {
                     ],
                   ),
                 ),
+                Spacer(),
+                Container(
+                  height: MediaQuery.of(context).size.height / 2.5,
+                  child: Column(
+                    children: [
+                      const SizedBox(height: 40),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 23, horizontal: 20),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Imagine Dragons",
+                                  style: TextStyle(
+                                      color: Colors.white.withOpacity(0.9),
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                const SizedBox(height: 10),
+                                Text(
+                                  "Singer Name",
+                                  style: TextStyle(
+                                      color: Colors.white.withOpacity(0.8),
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ],
+                            ),
+                            const Icon(
+                              Icons.favorite,
+                              color: Colors.redAccent,
+                              size: 35,
+                            )
+                          ],
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          Slider(
+                            min: 0,
+                            max: 100,
+                            value: 40,
+                            onChanged: (value) {},
+                            activeColor: Colors.white,
+                            inactiveColor: Colors.white54,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 25),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "02:10",
+                                  style: TextStyle(
+                                    color: Colors.white.withOpacity(0.6),
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                                Text(
+                                  "04:30",
+                                  style: TextStyle(
+                                    color: Colors.white.withOpacity(0.6),
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 30),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          const Icon(
+                            Icons.list,
+                            color: Colors.white,
+                            size: 32,
+                          ),
+                          const Icon(
+                            CupertinoIcons.backward_end_fill,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                          Container(
+                            alignment: Alignment.center,
+                            height: 55,
+                            width: 55,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            child: const Icon(
+                              Icons.play_arrow,
+                              color: Color(0xFF31314F),
+                              size: 45,
+                            ),
+                          ),
+                          const Icon(
+                            CupertinoIcons.backward_end_fill,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                          const Icon(
+                            Icons.download,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                )
               ],
             ),
           ),
