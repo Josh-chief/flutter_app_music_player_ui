@@ -1,6 +1,6 @@
 # flutter_app_music_player
 
-A new Flutter project.
+A Music App UI Flutter project.
 
 ## Getting Started
 
