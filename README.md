@@ -1,10 +1,10 @@
 # flutter_app_music_player
 
-A Music App UI Flutter project.
+A Music App UI Flutter Project.
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
+FIRST-Start by downloading Flutter in you device.
+IDE-In this project I used vscode where I just installed a few extentions.
 
 A few resources to get you started if this is your first Flutter project:
 
